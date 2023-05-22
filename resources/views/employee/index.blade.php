@@ -9,18 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee</title>
 
-    <ul>
 
-        @foreach($employee as $employee)
-
-        <li>{{ $employee->first_name }} {{ $employee->last_name}}</li>
-
-        @endforeach
-
-
-    </ul>
 </head>
 <body>
+
+     <h1>EMPLOYEE LIST</h1>
+     
     
 </body>
 </html>

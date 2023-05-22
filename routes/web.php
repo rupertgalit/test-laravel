@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Employee;
 use App\Http\Controllers\Department;
+use App\Http\Controllers\Home;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,13 +20,21 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+// Home page
+Route::get('/',[Home::class ,"home"]); 
 
-Route::get('/',[Employee::class ,"index"]); 
-// Route::get('/',[Employee::class ,"index"]); 
+// List of Department
+Route::get('/department',[Home::class ,"department"]); 
 
-Route::get('/department',[Department::class ,"index"]); 
+// List of Employees
+Route::get('/employee',[Home::class ,"employees"]);
 
 Route::get('/greet',[Employee::class ,"greetings"]); 
+
+
+
+
+
 
 // Route::get('/user/{id}',[Employee::class ,'show'])->middleware('auth'); 
 

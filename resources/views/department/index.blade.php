@@ -9,7 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee</title>
 
-    <ul>
+
+</head>
+<body>
+
+        <ul>
 
         @foreach($department as $department)
 
@@ -18,9 +22,11 @@
         @endforeach
 
 
-    </ul>
-</head>
-<body>
+         TEST!
+
+        </ul>
+        
+        
     
 </body>
 </html>

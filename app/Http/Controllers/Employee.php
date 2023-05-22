@@ -17,7 +17,8 @@ class Employee extends Controller
     }
 
     public function greetings(){
-        echo "HELLO WORLD";
+        // echo "HELLO WORLD";
+        return view('employee.index');
     }
     // public function show($id){
 
